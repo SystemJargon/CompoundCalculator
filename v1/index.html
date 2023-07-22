@@ -6,18 +6,6 @@
 </head>
 <body>
   <h1>Compound Interest Calculator</h1>
-	<p><b>What this does</b>
-	<br>
-	<li>Based on your inputs, this takes a dollar balance with the added interest rate percentage.</li>
-	<li>Calculate the balance over years input with compounding interest. </li>
-	<li>Then subtract if any, tax rate percentage and rate of inflation percentage. </li>
-	<li>This will then give you a true rate of return.</li>
-	<br>
-	Note: Inflation and tax rate can be 0% or higher.
-	<br>
-  </p>
-  <hr>
-  
   <form id="interestForm">
     <label for="balance">Balance ($):</label>
     <input type="number" id="balance" min="0" step="0.01" required>
@@ -27,14 +15,7 @@
     <br>
     <label for="years">Years:</label>
     <input type="number" id="years" min="0" step="1" required>
-	<br>
-	<br>
-	<label for="taxRate">Tax Rate (%):</label>
-	<input type="number" id="taxRate" min="0" step="0.01" required>
-	<br>
-	<label for="inflationRate">Inflation Rate (%):</label>
-	<input type="number" id="inflationRate" min="0" step="0.01" required>
-	<br>
+    <br>
     <button type="submit">Calculate</button>
   </form>
   <div id="result"></div>
